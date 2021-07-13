@@ -4,8 +4,8 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
     
-        GUISetup newGame = new GUISetup();
-        newGame.makeFrame();
+        PlayGame newGame = new PlayGame();
+        newGame.play();
 
     }
     
