@@ -6,6 +6,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class GamePiece {
+//public class GamePiece implements KeyListener {
+
 
     int row;
     int col;
@@ -43,6 +45,23 @@ public class GamePiece {
     public int getRow() {
         return row;
     }
+
+    /*public void keyTyped(KeyEvent e) {}
+    public void keyReleased(KeyEvent e) {}
+
+    public void keyPressed(KeyEvent e) {
+
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            //move(-10, "x", 0);
+            label.setLocation(175, 175);
+
+        }
+    }
+    */
+
+
+
+
     
 }
 
