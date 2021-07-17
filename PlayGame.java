@@ -24,20 +24,26 @@ public class PlayGame {
         //adding game pannel
         JPanel gamePanel = newGame.makeGamePanel(frame);
 
+        //initializes game logic 
+        GameLogic newGameLogic = new GameLogic();
+        
 
         //adding squares to game pannel
         GameBoard newBoard = new GameBoard();
-        JPanel completeGamePanel = newBoard.makeGameGrid(gamePanel);
+        JPanel completeGamePanel = newBoard.makeGameGrid(gamePanel, newGameLogic);
 
 
 
 
         frame.pack();
         frame.setVisible(true);
-        MyKeyListener l = new MyKeyListener(newBoard.getPieces(), frame);
+        MyKeyListener l = new MyKeyListener(newBoard.getPieces(), frame, newGameLogic);
         frame.addKeyListener(l);
 
         frame.repaint();
+
+        //testinggg branch once again 
+        
 
         
 
