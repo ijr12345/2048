@@ -25,7 +25,7 @@ public class GameBoard {
 
         //creates initial game piece 
         GamePiece piece = new GamePiece();
-        JLabel block =  piece.newSlidingPiece(0, 0, 2);
+        JLabel block =  piece.newSlidingPiece(0, 0, 6);
         pieces.add(piece);
 
         //update game logic grid
@@ -35,11 +35,15 @@ public class GameBoard {
 
 
         GamePiece piece2 = new GamePiece();
-        JLabel block2 =  piece2.newSlidingPiece(1, 1, 2);
+        JLabel block2 =  piece2.newSlidingPiece(0, 1, 2);
+    
+        //allKeyListener l = new allKeyListener();
+        //piece2
+
         pieces.add(piece2);
 
         //update game logic grid
-        gameLogic.updateSpace(1, 1, 2);
+        gameLogic.updateSpace(0, 1, 2);
 
         gamePanel.add(block2);
         

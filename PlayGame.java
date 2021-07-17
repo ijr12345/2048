@@ -37,7 +37,10 @@ public class PlayGame {
 
         frame.pack();
         frame.setVisible(true);
-        MyKeyListener l = new MyKeyListener(newBoard.getPieces(), frame, newGameLogic);
+        //MyKeyListener l = new MyKeyListener(newBoard.getPieces(), frame, newGameLogic);
+        //frame.addKeyListener(l);
+        //GamePiece l = new GamePiece();
+        allKeyListener l = new allKeyListener(newBoard.getPieces(), frame);
         frame.addKeyListener(l);
 
         frame.repaint();
